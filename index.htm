@@ -1,0 +1,245 @@
+<!-- DOCTYPE html -->
+<html lang ="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" >
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="author" content="Robert Beatty">
+	<meta name="keywords" content="Philadelphia, Planning, DVRPC, Sustainable, Green, Urban Planning, DVRPC, Delaware Valley Regional Planning Commission">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="TBD">
+
+	<!-- Necessary Bullshit -->
+	<title>Municipal Actions for Smart Growth Initiatives</title>
+
+	<!-- Load things -->
+		<!-- CSS CDNs for hosted app -->
+
+            <link href="https://fonts.googleapis.com/css?family=Kreon|Poppins" rel="stylesheet">
+		
+
+		<!-- Local files for development -->
+            <link rel="stylesheet" type="text/css" href="lib/css/dev/bootstrap.min.css">
+            <link rel="stylesheet" href="lib/css/dev/leaflet.css">
+			<link rel="stylesheet" type="text/css" href="lib/css/app.css">        
+
+
+</head>
+
+<body scroll="no">
+<!-- Header Begin -->
+	<div class="navbar">
+		<header class="navbar navbar-inverse navbar-fixed-top main-color" style="border: 0px;">
+			<div class="navbar-header">
+				<a href="#" target="_blank">
+					<!--<div class="greenway-title">
+						<img src="lib/img/greenway-logo.png" height="60">
+					</div> -->
+					<p class="title-text" id="site-title">Municipal Actions for Smart Growth</p>
+				</a>
+			</div>
+			<ul class="navbar navbar-nav navbar-right">
+				<li class="dropdown">
+					<a id="testDrop1" href="#" class="navbar-button dropdown-toggle title-text" data-toggle="dropdown">Resources<b class="caret"></b>
+					</a>
+					<ul class="dropdown-menu">
+                        <li>
+                            <a href="http://www.dvrpc.org/SmartGrowth/" class="body-text" target="_blank"><i class="glyphicon glyphicon-home"></i>&nbsp;&nbsp;Smart Growth Home</a>
+                        </li>   
+						<li>
+							<a href="http://www.dvrpc.org/webmaps/SGPD/" class="body-text" target="_blank"><i class="glyphicon glyphicon-bookmark"></i>&nbsp;&nbsp;Smart Growth Project Database</a>
+						</li>
+						<li>
+							<a href="http://www.dvrpc.org/webmaps/TOD/" class="body-text" target="_blank"><i class="glyphicon glyphicon-bookmark"></i>&nbsp;&nbsp;Transit-Oriented Development</a>
+						</li>					
+					</ul>
+				</li>
+				<li class="dropdown">
+					<a id="testDrop2" href="#" role="button" class="navbar-button dropdown-toggle title-text" data-toggle="dropdown">Test M<b class="caret"></b>
+					</a>
+					<ul class="dropdown-menu">
+						<li>
+							<a href="#" class="body-text">Thing 1</a>
+						</li>
+						<li>
+							<a href="#" class="body-text">Thing 2</a>
+						</li>
+						<li>
+							<a href="#" class="body-text">Thing 3</a>
+						</li>						
+					</ul>					
+				</li>
+				<li class="dropdown">
+					<a id="testDrop3" href="#" role="button" class="navbar-button dropdown-toggle title-text" data-toggle="dropdown">Test R<b class="caret"></b>
+					</a>
+					<ul class="dropdown-menu">
+						<li>
+							<a href="#" class="body-text">Thing 1</a>
+						</li>
+						<li>
+							<a href="#" class="body-text">Thing 2</a>
+						</li>
+						<li>
+							<a href="#" class="body-text">Thing 3</a>
+						</li>						
+					</ul>
+				</li>								
+			</ul>
+		</header>
+	</div>
+<!-- Header Ends -->
+
+
+<!-- Main Container Begins -->
+	<div class="container-fluid" id="container">
+		<div class="row">
+			<!-- Sidebar Begins -->
+			<div class="col-sm-3 col-lg-3" id="sidebar">
+				<div class="tab-content">
+					<div class="panel-group legend">
+                        <div class="panel panel-default">
+                        <!-- Layer Group 1 Begin-->
+                            <div class="panel-heading">
+                                <a href="#" data-toggle="modal" data-target="#" ><div class="panelinfo legicon" > </div></a>
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion_" href="#layer-group-uno">
+                                    <div class="panel-link layer-one">
+                                        <span class="layer-control-head"><h6 class="legend-header title-text">Map Layers</h6></span>
+                                    </div>
+                                </a>
+                                <a class="checked_all togglebox"></a>
+                            </div> 
+                             <div id="layer-group-uno" class="panel-collapse collapse">
+                                <ul class="panel-body legend-panel">
+                                    <li>
+                                    	<div class="row">
+                                    		<div class="col-sm-2 col-lg-2 legend-row-left">
+                                    			<i class="glyphicon glyphicon-ok-sign layer-chkbx" z-index="24"></i>
+                                    			<i class="glyphicon glyphicon-stats"></i>                      			
+                                    		</div>
+                                    		<div class="col-sm-10 col-lg-10 legend-row-right">
+                                    			<p class="legend-layer-title body-text">Placeholder</p>
+                                    		</div>
+                                    </li>
+                                    <li>
+                                    	<div class="row">
+                                    		<div class="col-sm-2 col-lg-2 legend-row-left">
+                                    			<i class="glyphicon glyphicon-ok-sign layer-chkbx" z-index="24"></i>
+                                    			<i class="glyphicon glyphicon-stats"></i>
+                                    		</div>
+                                    		<div class="col-sm-10 col-lg-10 legend-row-right">
+                                    			<p class="legend-layer-title body-text">Placeholder</p>
+                                    		</div>
+                                    </li>
+                                    <li>
+                                    	<div class="row">
+                                    		<div class="col-sm-2 col-lg-2 legend-row-left">
+                                    			<i class="layer-chkbx glyphicon glyphicon-ok-sign layer-chkbx" z-index="24"></i>
+                                    			<i class="glyphicon glyphicon-stats"></i>
+                                    			
+                                    		</div>
+                                    		<div class="col-sm-10 col-lg-10 legend-row-right">
+                                    			<p class="legend-layer-title body-text">Placeholder</p>
+                                    		</div>
+                                    </li>
+                                    <li>
+                                    	<div class="row">
+                                    		<div class="col-sm-2 col-lg-2 legend-row-left">
+                                    			<i class="layer-chkbx glyphicon glyphicon-ok-sign layer-chkbx" z-index="24"></i>
+                                    			<i class="glyphicon glyphicon-stats"></i>
+                                    		</div>
+                                    		<div class="col-sm-10 col-lg-10 legend-row-right">
+                                    			<p class="legend-layer-title body-text">Placeholder</p>
+                                    		</div>
+                                    </li>
+                                </ul>    
+                        	</div>
+                        <!-- Layer Group 1 Ends -->
+
+                        <!-- Layer Group 2 Begin-->
+                            <div class="panel-heading">
+                                <a href="#" data-toggle="modal" data-target="#" ><div class="panelinfo legicon" > </div></a>
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion_" href="#layer-group-dos">
+                                    <div class="panel-link truckinfo">
+                                        <span class="layer-control-head"><h6 class="legend-header title-text">Statistics</h6></span>
+                                    </div>
+                                </a>
+                                <a class="checked_all togglebox"></a>
+                            </div> 
+                             <div id="layer-group-dos" class="panel-collapse collapse">
+                                <!-- <ul class="panel-body legend-panel"">
+                                    <li>
+                                    	<div class="row">
+                                    		<div class="col-sm-3 col-lg-3 legend-row-left">
+                                                <i class="layer-chkbx glyphicon glyphicon-ok-sign layer-chkbx" z-index="24"></i>
+                                                <i class="glyphicon glyphicon-stats"></i>                     		
+                                    		</div>
+                                    		<div class="col-sm-9 col-lg-9 legend-row-right">
+                                    			<p class="legend-layer-title body-text">Placeholder</p>
+                                    		</div>
+                                    </li>
+                                    <li>
+                                    	<div class="row">
+                                    		<div class="col-sm-3 col-lg-3 legend-row-left">
+                                                <i class="layer-chkbx glyphicon glyphicon-ok-sign layer-chkbx" z-index="24"></i>
+                                                <i class="glyphicon glyphicon-stats"></i>                          		
+                                    		</div>
+                                    		<div class="col-sm-9 col-lg-9 legend-row-right">
+                                    			<p class="legend-layer-title body-text">Placeholder</p>
+                                    		</div>
+                                    </li>
+                                    <li>
+                                    	<div class="row">
+                                    		<div class="col-sm-3 col-lg-3 legend-row-left">
+                                                <i class="layer-chkbx glyphicon glyphicon-ok-sign layer-chkbx" z-index="24"></i>
+                                                <i class="glyphicon glyphicon-stats"></i>                                			
+                                    		</div>
+                                    		<div class="col-sm-9 col-lg-9 legend-row-right">
+                                    			<p class="legend-layer-title body-text">Placeholder</p>
+                                    		</div>
+                                    </li>
+                                    <li>
+                                    	<div class="row">
+                                    		<div class="col-sm-3 col-lg-3 legend-row-left">
+                                                <i class="layer-chkbx glyphicon glyphicon-ok-sign layer-chkbx" z-index="24"></i>
+                                                <i class="glyphicon glyphicon-stats"></i>
+                                    		</div>                      		
+                                    		<div class="col-sm-9 col-lg-9 legend-row-right">
+                                    			<p class="legend-layer-title body-text">Placeholder</p>
+                                    		</div>
+                                    	</div>
+                                    </li>
+                                </ul>     -->
+                        	</div>
+                        	<!-- Layer Group 2 Ends -->                        	
+                    	</div>
+                    </div>
+				</div>
+			</div>
+			<!-- Sidebar Ends-->
+			<!-- Map Begin -->
+			<div class="col-sm-9 col-lg-9" id="mapDiv"> </div>
+			<!-- Map Ends -->
+			<div class="navbar navbar-fixed-bottom">
+				<button type="button" class="btn btn-sm navbar navbar-left body-text" id="sidebar-toggle">
+					<i class="glyphicon glyphicon-menu-left" id="sidebar-icon"></i> Sidebar
+				</button>
+			</div>
+		</div>
+	</div>
+<!-- Main Container Ends -->
+<!-- Load Things -->
+	<!-- JS CDNs for hosted app -->
+
+    <!-- Local JS files for development -->
+		<script type="text/javascript" src="lib/js/dev/leaflet.js"></script>
+		<script type="text/javascript" src="lib/js/dev/jquery-1.9.1.js"></script>
+		<script type="text/javascript" src="lib/js/dev/bootstrap.min.js"></script>
+	<!-- load app.js -->
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+        <script type="text/javascript" src="lib/js/plugins.js"></script>
+		<script type="text/javascript" src="lib/js/app.js"></script>
+
+
+
+</body>
+</html>

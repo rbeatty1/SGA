@@ -1,0 +1,277 @@
+/* -------------------------------------------------------------------------- */
+/* Created and maintained by the Delaware Valley Regional Planning Commission */
+/* Author(s): Christopher Pollard, Robert Beatty, Jesse Strangfield---------- */
+/* Date Updated: July 2017 -------------------------------------------------- */
+/* Version: 1.0.1 Beta ------------------------------------------------------ */ 
+/* -------------------------------------------------------------------------- */
+
+
+/* -------- */
+/*  Overall */
+/* -------- */ 
+
+
+/* -------- */
+/*  Nav Bar */
+/* -------- */ 
+
+/* -------- */
+/*  Sidebar */
+/* -------- */ 
+
+    /* Overall Styling */
+
+
+
+    /* Tabs */
+
+
+    /* Legend Pane */
+
+        /* Overall Styling */
+
+        /* Tooltip */
+
+        /* Legend Buttons */
+
+    /* D3 Stuff */
+
+	    .pie-slice{
+			stroke: #fff;
+			stroke-width: 2px;
+		}
+
+
+		.pie-slice:hover{
+			opacity: .5;
+			stroke-width: 6px;
+		}
+
+		.pie-tooltip{
+			background-color: #22333B;
+			color: #fff;
+			display: none;
+			font-family: 'Poppins', serif;
+			font-size: 12px;
+			line-height: 1;
+			padding: 3px 5px;
+			position: absolute;
+			text-align: left;
+
+		}
+
+		.inner-circle-text{
+			color: #fff;
+			font-family: 'Poppins', serif;
+			font-size: 16px;
+			font-weight: 400;
+			z-index: 50;
+			text-anchor: middle;
+		}
+
+		.svg-title{
+			font-family: 'Kreon', serif;
+			font-size: 28px;
+		}
+
+		.svg-subtitle{
+			font-family: 'Poppins', sans-serif;
+			font-size: 14px;
+		}
+
+
+
+
+
+
+/*--------- */
+/*  Modals  */
+/*--------- */ 
+
+
+/* --------- */
+/*  Leaflet  */
+/* --------- */ 
+
+
+/* --------- */
+/* Bootstrap */
+/* --------- */ 
+
+
+/* --------- */
+/*   Other   */
+/* --------- */ 
+
+html, body, #container, #sidebar{
+	height: 100%;
+	margin: 0px!important;
+	overflow: hidden;
+}
+
+.title-text{
+	font-family: 'Kreon', serif;
+}
+
+.body-text{
+	font-family: 'Poppins', sans-serif;
+}
+
+#sidebar{
+	background-color: #B5C3B9;
+	display: block;
+	position: relative;
+	border-right: 2px solid #fff;
+}
+
+#mapDiv{
+	height: 100%;
+	position: relative;
+}
+
+#site-title{
+	color: #EAE0D5;
+	font-size: 28px;
+	padding: 10px;
+	vertical-align: bottom;
+}
+
+.main-color{
+	background-color: #22333B;
+}
+
+.navbar-button {
+	background-color: #5E7B67;
+	color: #fff;
+	padding-top: 10px;
+	float: right;
+}
+
+.navbar-button:hover {
+	background-color: #b8d4c1;
+	color: #EAE0D5;
+	padding-top: 10px;
+	float: right;
+	border-bottom:1px solid #544b3d;
+}
+
+.navbar-nav>li>a, .navbar-nav>li>a:visited, .navbar-nav>li>a:link, .navbar-nav>li>.dropdown {
+    padding: 9px 5px;
+    text-decoration: none;
+}
+
+.navbar-inverse .navbar-toggle, .navbar-inverse .navbar-nav>.open>a,.navbar-inverse .navbar-nav>.open>a:hover,.navbar-inverse .navbar-nav>.open>a:focus, .navbar-inverse .navbar-nav>li>a, .navbar-nav>li>.dropdown{
+    background-color: #5E7B67;
+    color: #EAE0D5;
+    text-decoration: none;
+}
+
+
+.navbar-right{
+	margin-right: 15px;
+}
+
+#navbar-menus{
+	border: 1px solid #EAE0D5;
+	padding: 0px;
+}
+
+ul {
+	list-style: none;
+}
+
+
+
+a {
+	text-decoration: none;
+}
+
+a:visited {
+	color: purple;
+	text-decoration: none;
+}
+
+a:link{
+	text-decoration: none;
+}
+
+a:hover {
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.tab-content{
+	padding-top: 25px;
+}
+
+#sidebar-toggle {
+	background-color: #5E7B67;
+	margin: 0px 0px 20px 30px;
+	min-width: 75px;
+	height: 50px;
+	color: #fff;
+	border: 2px solid #fff;
+}
+
+.panel-default>.panel-heading {
+    color: #000;
+    background-color: #5E7B67;
+    border: 1px solid #fff;
+}
+
+.panel-link{
+	color: #fff;
+}
+
+.panel-body{
+    padding: 10px;
+    background-color: #fff;
+    margin: 0px;
+    color: #22333B;
+}
+
+.layer{
+	padding:5px 0px 5px 5px;
+}
+
+.glyphicon:before{
+	visibility: visible;
+}
+
+input[type=checkbox].glyphicon{
+    visibility: hidden;
+}
+
+.legend-header{
+	font-weight:700;
+	text-align: center;
+	font-size:20px;
+	color: #fff;
+}
+
+.legend-layer-title{
+	font-weight: 400;
+	text-align: right;
+	font-size: 14px;
+}
+
+.legend-row-left{
+	padding-right:0px;
+}
+
+.legend-row-left>a{
+	color: inherit;
+}
+
+.legend-row-left>a:visited{
+	color: #22333B;
+}
+.legend-row-right{
+	padding-left: 0px;
+}
+
+.dropdown-menu > li > a:focus, .dropdown-menu > li > a:hover{
+	background-color: #B5C3B9;
+}
+
+
