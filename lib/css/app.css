@@ -169,6 +169,7 @@ html, body, #container, #sidebar{
 
 .navbar-right{
 	margin-right: 15px;
+	padding-right: 5em;
 }
 
 #navbar-menus{
