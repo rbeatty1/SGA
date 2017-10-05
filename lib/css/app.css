@@ -109,6 +109,11 @@ html, body, #container, #sidebar{
 	overflow: hidden;
 }
 
+#container{
+	position: absolute;
+	width: 100%;
+}
+
 .title-text{
 	font-family: 'Kreon', serif;
 }
@@ -126,7 +131,7 @@ html, body, #container, #sidebar{
 
 #mapDiv{
 	height: 100%;
-	position: relative;
+	position: relative	;
 }
 
 #site-title{
